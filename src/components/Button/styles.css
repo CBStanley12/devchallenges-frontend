@@ -30,9 +30,33 @@
     box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
     color: var(--clr-text);
 }
-
 .btn-default:hover,
 .btn-default:focus {
     background: rgba(var(--clr-bg-active), 1);
     box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+}
+
+
+/* - Sizes - */
+.btn--sm {
+    padding: 6px 12px;
+}
+.btn--md {
+    padding: 8px 16px;
+}
+.btn--lg {
+    padding: 11px 22px;
+}
+
+
+/* - Disabled - */
+button:disabled {
+    border: none;
+    color: #9E9E9E;
+    cursor: default;
+    pointer-events: none;
+}
+
+.btn-default:disabled {
+    background: #E0E0E0;
 }

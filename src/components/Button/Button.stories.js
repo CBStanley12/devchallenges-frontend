@@ -12,5 +12,13 @@ export const Default = Template.bind({});
 Default.args = {
     variant: 'default',
     color: 'default',
+    size: 'md',
     value: 'Button',
+    disabled: false,
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+    ...Default.args,
+    disabled: true,
 };
