@@ -1,0 +1,38 @@
+:root {
+    --clr-default: 224, 224, 224;
+    --clr-default-active: 174, 174, 174;
+}
+
+.btn {
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* - Colors - */
+.btn-clr--default {
+    --clr-text: #3F3F3F;
+    --clr-bg: var(--clr-default);
+    --clr-bg-active: var(--clr-default-active);
+}
+
+
+/* - Variants - */
+
+/* Default */
+.btn-default {
+    background: rgba(var(--clr-bg), 1);
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+    color: var(--clr-text);
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    background: rgba(var(--clr-bg-active), 1);
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+}
