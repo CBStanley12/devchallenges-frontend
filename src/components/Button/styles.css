@@ -1,6 +1,15 @@
 :root {
     --clr-default: 224, 224, 224;
     --clr-default-active: 174, 174, 174;
+    --clr-primary: 41, 98, 255;
+    --clr-primary-active: 0, 57, 203;
+    --clr-secondary: 69, 90, 100;
+    --clr-secondary-active: 28, 49, 58;
+    --clr-danger: 211, 47, 47;
+    --clr-danger-active: 154, 0, 7;
+
+    --clr-txt-light: #FAFBFD;
+    --clr-txt-dark: #3F3F3F;
 }
 
 .btn {
@@ -14,11 +23,27 @@
     justify-content: center;
 }
 
+
 /* - Colors - */
 .btn-clr--default {
-    --clr-text: #3F3F3F;
+    --clr-text: var(--clr-txt-dark);
     --clr-bg: var(--clr-default);
     --clr-bg-active: var(--clr-default-active);
+}
+.btn-clr--primary {
+    --clr-text: var(--clr-txt-light);
+    --clr-bg: var(--clr-primary);
+    --clr-bg-active: var(--clr-primary-active);
+}
+.btn-clr--secondary {
+    --clr-text: var(--clr-txt-light);
+    --clr-bg: var(--clr-secondary);
+    --clr-bg-active: var(--clr-secondary-active);
+}
+.btn-clr--danger {
+    --clr-text: var(--clr-txt-light);
+    --clr-bg: var(--clr-danger);
+    --clr-bg-active: var(--clr-danger-active);
 }
 
 

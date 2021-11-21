@@ -3,7 +3,7 @@ import Button from '.';
 
 export default {
     component: Button,
-    title: 'Button',
+    title: 'Button - Default',
 };
 
 const Template = args => <Button {...args} />;
@@ -17,6 +17,24 @@ Default.args = {
     disabled: false,
     disableShadow: false,
 };
+
+export const Primary = Template.bind({});
+Primary.args = {
+    ...Default.args,
+    color: 'primary',
+}
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+    ...Default.args,
+    color: 'secondary',
+}
+
+export const Danger = Template.bind({});
+Danger.args = {
+    ...Default.args,
+    color: 'danger',
+}
 
 export const Disabled = Template.bind({});
 Disabled.args = {
