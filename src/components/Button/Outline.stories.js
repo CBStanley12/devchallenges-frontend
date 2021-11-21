@@ -3,14 +3,14 @@ import Button from '.';
 
 export default {
     component: Button,
-    title: 'Button - Default',
+    title: 'Outline Button',
 };
 
 const Template = args => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-    variant: 'default',
+    variant: 'outline',
     color: 'default',
     size: 'md',
     value: 'Button',

@@ -48,7 +48,6 @@
 
 
 /* - Variants - */
-
 /* Default */
 .btn-default {
     background: rgba(var(--clr-bg), 1);
@@ -62,6 +61,26 @@
 }
 .no-shadow {
     box-shadow: none !important;
+}
+/* Outline */
+.btn-outline {
+    background: transparent;
+    border: 1px solid rgba(var(--clr-bg), 1);
+    color: rgba(var(--clr-bg), 1);
+}
+.btn-outline:hover,
+.btn-outline:focus {
+    background: rgba(var(--clr-bg), 0.1);
+}
+/* Text */
+.btn-text {
+    background: transparent;
+    border: none;
+    color: rgba(var(--clr-bg), 1);
+}
+.btn-text:hover,
+.btn-text:focus {
+    background: rgba(var(--clr-bg), 0.1);
 }
 
 
@@ -79,13 +98,10 @@
 
 /* - Disabled - */
 button:disabled {
+    background: #E0E0E0;
     border: none;
     box-shadow: none !important;
     color: #9E9E9E;
     cursor: default;
     pointer-events: none;
-}
-
-.btn-default:disabled {
-    background: #E0E0E0;
 }
