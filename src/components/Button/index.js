@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 
-const Button = ({ variant, color, size, value, disabled }) => {
+const Button = ({ variant, color, size, value, disabled, disableShadow }) => {
+    let shadow = disableShadow ? 'no-shadow' : '';
+
     return (
         <button
-            className={`btn btn-${variant} btn-clr--${color} btn--${size}`}
+            className={`btn btn-${variant} btn-clr--${color} btn--${size} ${shadow}`}
             value={value}
             disabled={disabled}
         >
@@ -20,6 +22,7 @@ Button.propTypes = {
     size: PropTypes.string,
     value: PropTypes.string,
     disabled: PropTypes.bool,
+    disableShadow: PropTypes.bool,
 };
 
 export default Button;

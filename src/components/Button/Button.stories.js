@@ -15,6 +15,7 @@ Default.args = {
     size: 'md',
     value: 'Button',
     disabled: false,
+    disableShadow: false,
 };
 
 export const Disabled = Template.bind({});
