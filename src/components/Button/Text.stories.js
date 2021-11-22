@@ -16,6 +16,18 @@ Default.args = {
     value: 'Button',
     disabled: false,
     disableShadow: false,
+    attributes: {
+        name: 'Default Button',
+        type: 'button',
+        /*
+        form: '',
+        formaction: '',
+        formenctype: '',
+        formmethod: '',
+        formnovalidate: '',
+        formtarget: '',
+        */
+    },
 };
 
 export const Primary = Template.bind({});
