@@ -41,3 +41,17 @@ Disabled.args = {
     ...Default.args,
     disabled: true,
 };
+
+export const PrimaryWithStartIcon = Template.bind({});
+PrimaryWithStartIcon.args = {
+    ...Default.args,
+    color: 'primary',
+    startIcon: 'local_grocery_store',
+}
+
+export const PrimaryWithEndIcon = Template.bind({});
+PrimaryWithEndIcon.args = {
+    ...Default.args,
+    color: 'primary',
+    endIcon: 'local_grocery_store',
+}

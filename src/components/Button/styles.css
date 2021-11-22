@@ -105,3 +105,15 @@ button:disabled {
     cursor: default;
     pointer-events: none;
 }
+
+
+/* - Icons - */
+button > .material-icons {
+    font-size: 15px;
+}
+.icon-start {
+    margin-right: 8px;
+}
+.icon-end {
+    margin-left: 8px;
+}
