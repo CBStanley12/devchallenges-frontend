@@ -1,0 +1,19 @@
+.layout-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.main {
+    grid-area: main;
+    padding: 5% 0;
+}
+
+.main a {
+    flex-basis: fit-content;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: fit-content;
+}

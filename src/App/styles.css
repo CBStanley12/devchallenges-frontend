@@ -31,17 +31,15 @@ button {
 
 .layout-container {
 	display: grid;
+	background: rgb(47, 50, 55);
 	grid-template-columns: 220px 1fr;
 	grid-template-rows: 1frd;
 	grid-template-areas: "sidebar main";
 	height: 100vh;
 }
 
-.layout-main {
-	
-}
-
-.main {
-	grid-area: main;
-	background: rgb(47, 50, 55);
+.l-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

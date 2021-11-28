@@ -1,27 +1,21 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './styles.css';
 
 import Sidebar from '../components/Sidebar';
+import HomePage from '../pages/Home';
+import ButtonComponentPage from '../pages/ButtonComponent';
 
 const App = () => {
 	return (
-		<BrowserRouter>
-			<div className="layout-container">
-				<Sidebar />
-				<main className="layout-main main">
-					<Routes>
-						<Route path="/" />
-					</Routes>
-				</main>
-			</div>
-		</BrowserRouter>
+		<div className="layout-container">
+			<Sidebar />
+			<Routes>
+				<Route path="/" element={<HomePage />} />
+				<Route path="button-component" element={<ButtonComponentPage />} />
+			</Routes>
+		</div>
 	);
-};
-
-App.propTypes = {
-
 };
 
 export default App;

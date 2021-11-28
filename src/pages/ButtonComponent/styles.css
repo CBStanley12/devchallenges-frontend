@@ -1,0 +1,42 @@
+.layout-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.main {
+    grid-area: main;
+    color: rgb(229, 234, 240);
+    overflow: auto;
+    padding: 50px 10%;
+    position: relative;
+}
+
+.header {
+    flex-basis: 100%;
+}
+
+.header_title,
+.section_title {
+    font-weight: 400;
+}
+
+.section_title {
+    border-bottom: 1px solid rgb(69, 79, 89);
+    padding: 6px 0;
+}
+
+.section_list_title {
+    margin-top: 16px;
+}
+
+.section_list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 40px;
+    list-style-type: none;
+    padding: 16px;
+}
