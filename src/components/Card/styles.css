@@ -1,0 +1,41 @@
+.layout-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70% 30%;
+}
+
+.card {
+    background: rgb(42, 43, 47);
+    border: 1px solid rgb(69, 79, 89);
+    border-radius: 6px;
+    height: 250px;
+    max-height: 250px;
+    max-width: 300px;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.card:hover,
+.card:focus {
+    cursor: pointer;
+    border-color: rgb(141, 153, 167);
+}
+
+.card_img {
+    border-radius: 8px;
+    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card_footer {
+    flex-direction: column;
+}
+
+.card_title {
+    color: rgb(229, 234, 240);
+}
+
+.card_tag {
+    color: rgb(201, 208, 218);
+}

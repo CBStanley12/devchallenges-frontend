@@ -13,10 +13,6 @@ const Sidebar = () => {
                     <Icon baseClassName="material-icons-outlined">home</Icon>
                     Home
                 </Link>
-                <Link to="/projects" className="nav_link">
-                    <Icon baseClassName="material-icons-outlined">wysiwyg</Icon>
-                    Projects
-                </Link>
             </nav>
         </aside>
     );
