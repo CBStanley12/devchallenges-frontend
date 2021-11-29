@@ -26,16 +26,17 @@ button {
 	background-color: transparent;
 	color: inherit;
     cursor: pointer;
-	padding: 0;
 }
 
 .layout-container {
-	display: grid;
 	background: rgb(47, 50, 55);
+	display: grid;
+	align-items: start;
 	grid-template-columns: 220px 1fr;
-	grid-template-rows: 1frd;
+	grid-template-rows: 1fr;
 	grid-template-areas: "sidebar main";
 	height: 100vh;
+	overflow: auto;
 }
 
 .l-flex {

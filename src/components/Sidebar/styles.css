@@ -9,10 +9,14 @@
 
 .sidebar {
     grid-area: sidebar;
+    align-self: stretch;
     background: rgb(42, 43, 47);
     border-right: 1px solid rgb(69, 79, 89);
-    padding: 30px 0;
     overflow: hidden;
+    padding: 30px 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .sidebar_header,

@@ -7,6 +7,10 @@ import Card from '../../components/Card';
 const HomePage = () => {
     return (
         <main className="layout-main main">
+            <header className="header">
+                <h1 className="header_title">Projects for devChallenges.io</h1>
+            </header>
+
             <Link to="/button-component" className="" style={{ textDecoration: 'none' }}>
                 <Card
                     title="Button Component"

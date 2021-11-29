@@ -1,14 +1,25 @@
 .layout-main {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
     column-gap: 40px;
     row-gap: 40px;
 }
 
 .main {
     grid-area: main;
-    padding: 5% 0;
+    color: rgb(229, 234, 240);
+    overflow: auto;
+    padding: 50px 10%;
+    position: relative;
+}
+
+.header {
+    flex-basis: 100%;
+}
+
+.header_title {
+    font-weight: 400;
 }
 
 .main a {
